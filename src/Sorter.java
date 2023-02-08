@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Sorter {
     public static void SelactionSort(int[] list){
         for (int i=0;i<list.length-1;i++){
@@ -16,7 +18,17 @@ public class Sorter {
         }
 
     }
+    public static int[] sort(int[] list){
+        SelactionSort(list);
+        return list;
+    }    
+        
+
     public static void main(String[] args) {
+        int[] z= {1,7,3,9};
+        int[] x= sort(z);
+        System.out.println(Arrays.toString(x));
+        
         
     }
     
